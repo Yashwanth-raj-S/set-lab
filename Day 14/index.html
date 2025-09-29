@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      let Ticketbooking=new Promise((resolve,reject)=>{
+            let booking=true;
+            if(booking)
+                resolve()
+            else
+                reject()
+        })
+        .then(sucess)
+        .catch(failure)
+
+        function sucess(){
+            console.log("Your ticket is confirmed");
+        }
+        function failure(){
+            console.log("no seat is available")
+        }
+    </script>
+
+</body>
+</html>
